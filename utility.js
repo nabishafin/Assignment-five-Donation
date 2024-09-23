@@ -18,3 +18,12 @@ function getmainBalence(id) {
     const Balence = parseFloat(myBalence);
     return Balence
 }
+
+
+// added history function
+
+function AddedHistory(id) {
+    const historyDiv = document.getElementById(id);
+    return historyDiv
+
+}
