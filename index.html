@@ -8,10 +8,42 @@
 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-uniquifier {
+            font-family: "Lexend", sans-serif;
+
+        }
+    </style>
 </head>
 
-<body>
+<body class="max-w-screen-xl  m-auto border-2 p-3 lg:p-5 lexend-uniquifier">
+    <header>
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-2">
+            <div>
+                <a class="px-4 py-2 font-semibold bg-[#B4F461] rounded" href="">Blog</a>
+            </div>
+            <div class="flex  items-center gap-2">
+                <img class="w-10" src="./assets/logo.png" alt="">
+                <h2 class="text-2xl font-bold">Donation Bangladesh</h2>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <p class="font-bold"><span>5500</span> BDT</p>
+            </div>
 
+        </div>
+
+
+    </header>
+    <main>
+
+    </main>
 </body>
 
 </html>
