@@ -24,10 +24,6 @@ document.getElementById('noakhali-button').addEventListener('click', function ()
 
         const nowNoaBalance = document.getElementById('mainBalence').innerText = updatemyBalence
 
-        // modal
-        document
-
-
         // add to history
         const now = new Date();
         const div = document.createElement('div')
@@ -51,16 +47,17 @@ document.getElementById('feniHandle').addEventListener('click', function () {
     const inputValue = getInPutNumberValue('feniInputValue')
 
     if (typeof inputValue === 'number' && inputValue > 0) {
+
+
         const numberAmount = getValueInput('feniDonationAmount')
 
         const updateAmount = numberAmount + inputValue;
         document.getElementById('feniDonationAmount').innerText = updateAmount
-
         const numbeMyBalence = getmainBalence('mainBalence')
         const updatemyBalence = numbeMyBalence - inputValue;
         document.getElementById('mainBalence').innerText = updatemyBalence
 
-        // modal
+
 
 
         // add to history
@@ -83,6 +80,7 @@ document.getElementById('feniHandle').addEventListener('click', function () {
 document.getElementById('kotHandleClick').addEventListener('click', function () {
 
     const inputValue = getInPutNumberValue('kotaValue')
+
 
     if (typeof inputValue === 'number' && inputValue > 0) {
 
@@ -180,3 +178,5 @@ document.getElementById('backTohHome').addEventListener('click', function () {
     const btnDiv = document.getElementById('btn-div');
     btnDiv.classList.remove('hidden')
 })
+
+
