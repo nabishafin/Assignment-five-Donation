@@ -25,30 +25,32 @@
 </head>
 
 <body class="max-w-screen-xl  m-auto border-2 p-3 lg:p-5 lexend-uniquifier">
-    <header class="sticky top-0">
 
+
+    <header class="sticky top-0  backdrop-filter backdrop-blur-lg bg-opacity-30  bg-white">
         <!-- part-1 -->
         <div class="flex flex-col lg:flex-row items-center justify-between gap-2 bg-[#F9F7F3] p-5">
             <div>
-                <a class="px-4 py-2 font-semibold bg-[#B4F461] rounded" href="">Blog</a>
+                <button id="blog" class="px-4 py-2 font-semibold bg-[#B4F461] rounded" href="">Blog</button>
             </div>
             <div class="flex  items-center gap-2">
                 <img class="w-10" src="./assets/logo.png" alt="">
-                <h2 class="text-3xl font-bold">Donation Bangladesh</h2>
+                <h2 class="text-2xl font-bold">Donation Bangladesh</h2>
             </div>
             <div class="flex items-center gap-2">
                 <img src="./assets/coin.png" alt="">
-                <p class="font-bold"><span id="mainBalence">5500</span> BDT</p>
+                <p class="font-bold"><span id="mainBalence">12500</span> BDT</p>
             </div>
         </div>
         <!-- part-2 -->
-        <div class="flex justify-center items-center gap-2 mt-4 p-4">
-            <button class="px-4 py-2 font-semibold bg-[#B4F461] border-2 rounded ">Donation</button>
-            <button class="px-4 py-2 font-semibold  border-2 rounded"> History</button>
+        <div id="btn-div" class="flex justify-center items-center gap-2 mt-4 p-4">
+            <button id="donation-btn"
+                class="px-4 py-2 font-semibold bg-[#B4F461]  border-2 rounded text-xl">Donation</button>
+            <button id="History-btn" class="px-4 py-2 font-semibold  border-2 rounded text-xl"> History</button>
         </div>
     </header>
     <main>
-        <section>
+        <section id="donation_section">
             <!-- cart-1 -->
             <div class="grid grid-cols-1 lg:grid-cols-2  items-center border-2 p-5 rounded-lg gap-3 lg:gap-0">
                 <!-- img -->
@@ -71,9 +73,9 @@
                     <input id="noakhali-input" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full mt-3 " />
                     <button id="noakhali-button" class="bg-[#B4F461] w-full py-3  rounded-lg font-bold mt-3">Donate
-                        Now</button>
+                        Now
+                    </button>
                 </div>
-
             </div>
 
             <!-- cart-2 -->
@@ -136,12 +138,85 @@
 
 
         <!-- History -->
-        <section class="history-section hidden">
-            <h2 class="flex justify-center items-center font-semibold text-2xl mt-5">History</h2>
-            <div class=" p-4 mt-4" id="hidtory">
+        <section id="history_section" class="hidden">
+            <h2 class="flex justify-center items-center font-semibold text-3xl mt-5 bg-gray-200 p-2 rounded-lg  ">
+                History
+            </h2>
+            <div class=" p-4 mt-2" id="hidtory">
 
             </div>
         </section>
+
+        <!-- important faq -->
+
+        <section id="faq-section" class="mt-4 hidden">
+            <div>
+                <h2 class="text-2xl font-bold mb-3">important FAQ : </h2>
+            </div>
+
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl  font-medium">What is the Document Object Model (DOM)?
+                    </div>
+                    <div class="collapse-content">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents
+                            the page so that programs can change the document structure, style, and content.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <u>
+                            <li>Using getElementsByID:</li>
+                            <li>Using getElementsByClassName:</li>
+                            <li>Using getElementsByTagName:</li>
+                            <li> Using querySelector:</li>
+                            <li> Using querySelectorAll:</li>
+
+
+                        </u>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is when you add a single event listener to a parent element that handles
+                            events for all its child elements. This way, instead of adding listeners to each child, the
+                            parent listens for events and can respond when any child is interacted with. It’s useful
+                            because it improves performance, simplifies your code, and works well with elements that may
+                            be added later.</p>
+                    </div>
+
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the Dom?</div>
+                        <div class="collapse-content">
+                            <p>You can modify an element's attributes and styles in the DOM like this:
+                                Attributes:
+                                Get: Use element.getAttribute('attrName') to read an attribute.
+                                Set: Use element.setAttribute('attrName', 'value') to change or add an attribute.
+                                Remove: Use element.removeAttribute('attrName') to delete it.
+                                Styles:
+                                Change a style: Use element.style.propertyName = 'value' (e.g., element.style.color = 'blue').
+                                Set multiple styles: Use element.style.cssText = 'color: blue; background: yellow;'.
+                                This makes it easy to change how elements look and behave!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <button id="backTohHome"
+                    class="px-4 py-2 font-semibold bg-[#B4F461]  border-2 rounded text-xl mt-2">Back to
+                    Home
+                </button>
+            </div>
+        </section>
+
+
     </main>
     <script src="./utility.js"></script>
     <script src="./index.js"></script>

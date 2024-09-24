@@ -27,3 +27,5 @@ function AddedHistory(id) {
     return historyDiv
 
 }
+
+
