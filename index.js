@@ -14,7 +14,9 @@ document.getElementById('noakhali-button').addEventListener('click', function ()
         const updateAmount = numberAmount + inputValue;
         document.getElementById('noakhaliAmount').innerText = updateAmount
 
-        // step -2
+        // notification
+        alert('Your Have Donated for Humankind')
+
 
         // get mainvalence by function
         const numbeMyBalence = getmainBalence('mainBalence')
@@ -22,7 +24,7 @@ document.getElementById('noakhali-button').addEventListener('click', function ()
         // update value in my balence
         const updatemyBalence = numbeMyBalence - inputValue
 
-        const nowNoaBalance = document.getElementById('mainBalence').innerText = updatemyBalence
+        document.getElementById('mainBalence').innerText = updatemyBalence
 
         // add to history
         const now = new Date();
@@ -48,11 +50,13 @@ document.getElementById('feniHandle').addEventListener('click', function () {
 
     if (typeof inputValue === 'number' && inputValue > 0) {
 
-
         const numberAmount = getValueInput('feniDonationAmount')
 
         const updateAmount = numberAmount + inputValue;
         document.getElementById('feniDonationAmount').innerText = updateAmount
+
+        alert('Your Have Donated for Humankind')
+
         const numbeMyBalence = getmainBalence('mainBalence')
         const updatemyBalence = numbeMyBalence - inputValue;
         document.getElementById('mainBalence').innerText = updatemyBalence
@@ -88,6 +92,8 @@ document.getElementById('kotHandleClick').addEventListener('click', function () 
 
         const updateAmount = numberAmount + inputValue;
         document.getElementById('kotaDonationAmount').innerText = updateAmount
+
+        alert('Your Have Donated for Humankind')
 
         const numbeMyBalence = getmainBalence('mainBalence')
         const updatemyBalence = numbeMyBalence - inputValue;
@@ -178,5 +184,9 @@ document.getElementById('backTohHome').addEventListener('click', function () {
     const btnDiv = document.getElementById('btn-div');
     btnDiv.classList.remove('hidden')
 })
+
+
+
+
 
 
