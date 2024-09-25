@@ -41,6 +41,9 @@ document.getElementById("noakhali-button")
       const historyDiv = AddedHistory("hidtory");
       historyDiv.appendChild(div);
     }
+    else {
+      alert('invalid Donation Amount')
+    }
   });
 
 // 2nd Part
@@ -78,6 +81,9 @@ document.getElementById("feniHandle").addEventListener("click", function () {
          `;
     const historyDiv = AddedHistory("hidtory");
     historyDiv.appendChild(div);
+  }
+  else {
+    alert('invalid Donation Amount')
   }
 });
 
@@ -121,6 +127,11 @@ document
       const historyDiv = AddedHistory("hidtory");
       historyDiv.appendChild(div);
     }
+
+    else {
+      alert('invalid Donation Amount')
+    }
+
   });
 
 // toggle section

@@ -1,4 +1,5 @@
 // get inputvalue by function
+
 function getInPutNumberValue(id) {
     const input = document.getElementById(id).value;
     const Value = parseFloat(input)
