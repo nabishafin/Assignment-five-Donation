@@ -1,6 +1,6 @@
 // 1st part....
-document
-  .getElementById("noakhali-button")
+
+document.getElementById("noakhali-button")
   .addEventListener("click", function () {
     // input value by function
     const inputValue = getInPutNumberValue("noakhali-input");
@@ -19,8 +19,6 @@ document
       closeModalBtn.addEventListener("click", () => {
         myModal.classList.add("hidden");
       });
-      // notification
-      //   alert("Your Have Donated for Humankind");
 
       // get mainvalence by function
       const numbeMyBalence = getmainBalence("mainBalence");
@@ -46,6 +44,7 @@ document
   });
 
 // 2nd Part
+
 document.getElementById("feniHandle").addEventListener("click", function () {
   const inputValue = getInPutNumberValue("feniInputValue");
 
@@ -62,7 +61,6 @@ document.getElementById("feniHandle").addEventListener("click", function () {
     closeModalBtn.addEventListener("click", () => {
       myModal.classList.add("hidden");
     });
-    // alert("Your Have Donated for Humankind");
 
     const numbeMyBalence = getmainBalence("mainBalence");
     const updatemyBalence = numbeMyBalence - inputValue;
@@ -83,7 +81,10 @@ document.getElementById("feniHandle").addEventListener("click", function () {
   }
 });
 
+
+
 // 3rd part
+
 document
   .getElementById("kotHandleClick")
   .addEventListener("click", function () {
