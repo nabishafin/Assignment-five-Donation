@@ -44,7 +44,7 @@
         </div>
 
 
-        <div id="myModal" class="modal">
+        <!-- <div id="myModal" class="modal">
             <div class="modal-box">
                 <h2 class="font-bold text-lg">Modal Title</h2>
                 <p class="py-4">This is the content of the modal.</p>
@@ -52,7 +52,8 @@
                     <button id="closeModal" class="btn">Close</button>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
         <!-- part-2 -->
         <div id="btn-div" class="flex justify-center items-center gap-2 mt-4 p-4">
             <button id="donation-btn"
@@ -229,6 +230,21 @@
             </div>
         </section>
         <!-- modal -->
+        <div id="myModal" class="fixed inset-0 hidden bg-gray-500 bg-opacity-75 flex items-center justify-center z-50">
+            <div class="bg-white p-4 rounded-lg shadow-lg w-96">
+              <div class="modal-header">
+                <h3 class="text-lg font-semibold">Modal Title</h3>
+              </div>
+              <div class="modal-body my-4">
+                <p>Modal content goes here...</p>
+              </div>
+              <div class="modal-footer flex justify-end">
+                <button id="closeModalBtn" class="btn btn-primary">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
     </main>
     <footer class="h-20 bg-[#F9F7F3] mt-5 rounded-lg">
 
